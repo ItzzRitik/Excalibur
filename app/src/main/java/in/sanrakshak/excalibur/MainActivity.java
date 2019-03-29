@@ -76,5 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+        web.loadUrl("http://192.168.43.21:5000/dev/ttyACM0");
     }
 }

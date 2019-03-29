@@ -47,9 +47,6 @@ public class MainActivity extends AppCompatActivity {
         settings.setAppCacheEnabled(false);
         settings.setLoadWithOverviewMode(true);
         settings.setUseWideViewPort(true);
-        settings.setGeolocationEnabled(true);
-        settings.setSaveFormData(true);
-        settings.setDomStorageEnabled(true);
         settings.setUserAgentString("Mozilla/5.0 (Linux; Android "+Build.VERSION.RELEASE+"; "+Build.MODEL+" Build/"+Build.ID+") AppleWebKit/537.36 (KHTML, like Gecko) Chrome/ Mobile Safari/537.36");
 
         web.setWebChromeClient(new WebChromeClient());
@@ -82,6 +79,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        web.loadUrl("http://192.168.43.21:5000/dev/ttyACM0");
+        //web.loadUrl("http://192.168.43.21:5000/dev/ttyACM0");
     }
 }
